@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+</div>
+<div class="form1">
+    <form method="post" action="{{ url_for('add') }}">
+    <fieldset class="uk-fieldset">
+        <div class="uk-margin" uk-margin>
+            <label class="uk-form-label" for="form-stacked-text">Search Book</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-stacked-text"name="keyword" type="text" placeholder="ISBN番号">
+            </div>
+            <button class="uk-button uk-button-default" type="submit">Search</button>
+        </div>
+    </fieldset>
+    </form>
+</div>
+{% endblock %}

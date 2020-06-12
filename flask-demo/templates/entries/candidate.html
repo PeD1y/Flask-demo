@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+    <p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <table class="uk-table uk-table-justify uk-table-divider">
+        <tbody>
+            <tr>
+                <td>タイトル</td>
+                <td>{{ context.name | safe }}</td>
+            </tr>
+            <tr>
+                <td>作者</td>
+                <td>{{ context.writer | safe }}</td>
+            </tr>
+            <tr>
+                <td>出版日</td>
+                <td>{{ context.publication | safe }}</td>
+            </tr>
+            <tr>
+                <td>説明</td>
+                <td>{{ context.description | safe }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
